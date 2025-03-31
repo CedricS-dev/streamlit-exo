@@ -15,6 +15,7 @@ from exif import Image
 from streamlit_folium import st_folium
 import folium
 
+
 # Image avec données EXIF à récupérer/modifier
 photo = "Canon_40D.jpg"
 # Coordonnées GPS de mon adresse
@@ -56,6 +57,7 @@ lieux_a_visiter = [
 
 # Les différents exercices sont répartis dans des onglets sur l'application
 tab1, tab2, tab3 = st.tabs(["Données EXIF", "Données GPS", "Lieux"])
+
 
 def modifier_exif(image:str) -> None :
   """Récupère les données EXIF d'une image et les affiche dans un formulaire de
