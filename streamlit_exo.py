@@ -70,7 +70,7 @@ def modifier_exif(image:str) -> None :
   """
   # Affiche un titre et l'image dans la page
   st.title("Formulaire de modification des données EXIF")
-  st.image(image, caption=f"{image}")
+  st.image(image,)
   # Ouvre l'image en mode binaire
   with open(image, "rb") as img_file :
     img = Image(img_file)
