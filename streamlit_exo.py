@@ -17,7 +17,7 @@ import folium
 
 
 # Image avec données EXIF à récupérer/modifier
-photo = "Canon_40D.jpg"
+photo = Image.open("Canon_40D.jpg")
 # Coordonnées GPS de mon adresse
 mon_adresse_gps = {
   "ville": "Morsang sur Orge",
