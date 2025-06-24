@@ -14,10 +14,13 @@ import streamlit as st
 from exif import Image
 from streamlit_folium import st_folium
 import folium
+from pathlib import Path
 
 
+cwd = Path.cwd()
 # Image avec données EXIF à récupérer/modifier
-photo = Image.open("Canon_40D.jpg")
+photo = f"{cwd}/Canon_40D.jpg"
+print(photo)
 # Coordonnées GPS de mon adresse
 mon_adresse_gps = {
   "ville": "Morsang sur Orge",
